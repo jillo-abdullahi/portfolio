@@ -43,31 +43,58 @@ let resumeData = {
     ],
     "work":[
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
+        "CompanyName":"Samasource Kenya Ltd.",
+        "specialization":"Agent Junior Developer",
+        "timeOfStart":"Jul, 2015",
+        "timeOfLeaving":"Nov, 2015",
       },
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
+        "companyName":"Samasource Kenya Ltd.",
+        "specialization":"Agent Junior Developer",
+        "timeOfStart":"Jul, 2015",
+        "timeOfLeaving":"Nov, 2015",
+        "responsibilities": [
+          "Preliminary Feed Integrations",
+          "Creating new feeds and integrating them into the clients site.",
+          "Escalating complex integrations and feeds that require repairs.",
+          "Reviewing errors detected by the clients automated system, escalating issues when necessary.",
+          "Identifying improvements for detecting errors within job feeds.",
+          "Working with a fast-paced team to handle a high volume of requests in a timely manner.",
+          "Maintaining data work requirements by following data program techniques, procedures as well as meeting and maintaining the required quality threshold.",
+          "Verifying entered data by reviewing, correcting, deleting, or reentering data; purging files to eliminate duplication of data.",
+          "Contributing to team effort by accomplishing related results as needed.",
+          "Performing other work as required or assigned."
+
+        ]
+      },
+      {
+        "CompanyName":"Samasource Kenya Ltd.",
+        "specialization":"Agent Junior Developer",
+        "timeOfStart":"Jul, 2015",
+        "timeOfLeaving":"Nov, 2015",
+        "responsibilities": [
+          "Preliminary Feed Integrations",
+          "Creating new feeds and integrating them into the clients site.",
+          "Escalating complex integrations and feeds that require repairs.",
+          "Reviewing errors detected by the clients automated system, escalating issues when necessary.",
+          "Identifying improvements for detecting errors within job feeds.",
+          "Working with a fast-paced team to handle a high volume of requests in a timely manner.",
+          "Maintaining data work requirements by following data program techniques, procedures as well as meeting and maintaining the required quality threshold.",
+          "Verifying entered data by reviewing, correcting, deleting, or reentering data; purging files to eliminate duplication of data.",
+          "Contributing to team effort by accomplishing related results as needed.",
+          "Performing other work as required or assigned."
+
+        ]
       }
     ],
-    "skillsDescription":"Your skills here",
+
     "skills":[
-      {
-        "skillname":"HTML5"
-      },
-      {
-        "skillname":"CSS"
-      },
-      {
-        "skillname":"Reactjs"
-      }
+      {type: "VanillaJS", level: 75},
+      {type: "ReactJS", level: 80},
+      {type: "Python", level: 70},
+      {type: "Django", level: 75},
+      {type: "Flask", level: 60},
+      {type: "HTML/CSS", level: 60},
     ],
     "portfolio":[
       {

@@ -1,92 +1,62 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Skillbar from 'react-skillbars';
+import { Timeline, Event } from "react-timeline-scribble";
+
+
 export default  class Resume extends Component {
   render() {
+
     let resumeData = this.props.resumeData;
+
     return (
       <section id="resume">
 
-         <div className="row education">
-
-            <div className="three columns header-col">
-               <h1><span>Education</span></h1>
+      <div className="row work">
+            <div className="twelve columns main-col">
+              <div className="header-col">
+                  <h1><span>Work Experience</span></h1>
+              </div>
+                <Fragment>
+                  <Timeline>
+                    <Event interval={"2016 – 2018"} title={"Lorem"} subtitle={"Ipsum"}>
+                      dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                      id est laborum.
+                    </Event>
+                    <Event interval={"2015 – 2016"} title={"Lorem"} subtitle={"Ipsum"}>
+                      dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                      id est laborum.
+                    </Event>
+                  </Timeline>
+              </Fragment>
+          </div>
             </div>
-
-            <div className="nine columns main-col">
-              {
-                resumeData.education && resumeData.education.map((item)=>{
-                  return(
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.UniversityName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
-                    </div>
-                  )
-                })
-              }
-            </div>
-         </div>
-        <div className="row work">
-            <div className="three columns header-col">
-               <h1><span>Work</span></h1>
-            </div>
-
-            <div className="nine columns main-col">
-              {
-                resumeData.work && resumeData.work.map((item) => {
-                  return(
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.CompanyName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
-
-                    </div>
-
-                  )
-                })
-              }
-            </div> 
-         </div>
-
-
          <div className="row skill">
-
-            <div className="three columns header-col">
-               <h1><span>Skills</span></h1>
+          <div className="twelve columns main-col">
+              <div className="header-col">
+                <h1><span>Technical skills</span></h1>
             </div>
-
-            <div className="nine columns main-col">
-
-               <p>
-               {resumeData.skillsDescription}
-               </p>
-
    				<div className="bars">
 
-   				   <ul className="skills">
-                {
-                  resumeData.skills && resumeData.skills.map((item) => {
-                    return(
-                      <li>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
-                      </li>
-                    )
-                  })
+           <Skillbar
+              skills={resumeData.skills}
+              colors = {{
+                "bar": "#3498DA",
+                "title": {
+                  "text": "#fff",
+                  "background": "#3498DA"
                 }
-
-   					</ul>
+              }}
+                />
 
    				</div>
 
