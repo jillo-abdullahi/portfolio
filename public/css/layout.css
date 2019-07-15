@@ -210,7 +210,7 @@ ul#nav li a:active {
 }
 
 ul#nav li.current a {
-   color: #F06000;
+   color: #FFC107;
 }
 
 
@@ -220,8 +220,8 @@ ul#nav li.current a {
 
 #about {
    background: #2B2B2B;
-   padding-top: 96px;
-   padding-bottom: 66px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    overflow: hidden;
 }
 
@@ -237,7 +237,7 @@ ul#nav li.current a {
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #FFC107;
    margin-bottom: 12px;
 }
 
@@ -287,11 +287,16 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-   /* background: url("../images/email-pattern.png"); */
-   background: #fff;
-   padding-top: 90px;
+   /* background: url("../images/triangular.png"); */
+   /* background: #fff; */
+   padding-top: 30px;
    padding-bottom: 72px;
    overflow: hidden;
+}
+
+#resume h3,
+#resume h4 {
+   color: #FFECB3;
 }
 
 #resume a,
@@ -308,10 +313,11 @@ ul#nav li.current a {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
+   color: #FFC107
 }
 
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #FFC107;
    padding-bottom: 6px;
 }
 
@@ -1036,8 +1042,8 @@ call-to-action .button {
 
 #contact {
    background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    color: #636363;
 }
 
@@ -1120,6 +1126,7 @@ call-to-action .button {
    font-size: 15px;
    line-height: 24px;
    width: 65%;
+   border-radius: 4px;
 }
 
 #contact input:focus,
@@ -1150,6 +1157,19 @@ call-to-action .button {
 #contact span.required {
    color: #11ABB0;
    font-size: 13px;
+}
+
+#contact .well {
+   padding: 10px;
+   border-radius: 4px;
+}
+
+#contact .section-head {
+   text-align: center;
+}
+
+#contact .contact-info {
+   padding: 10px;
 }
 
 #message-warning,
