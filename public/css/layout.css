@@ -110,7 +110,7 @@ header .social li a {
 }
 
 header .social li a:hover {
-   color: #11ABB0;
+   color: #FFC107;
 }
 
 /* scrolldown link */
@@ -135,7 +135,7 @@ header .scrolldown a {
 }
 
 header .scrolldown a:hover {
-   color: #11ABB0;
+   color: #FFC107;
 }
 
 /* primary navigation
@@ -290,7 +290,7 @@ ul#nav li.current a {
    /* background: url("../images/triangular.png"); */
    /* background: #fff; */
    padding-top: 30px;
-   padding-bottom: 72px;
+   padding-bottom: 30px;
    overflow: hidden;
 }
 
@@ -441,6 +441,10 @@ ul#nav li.current a {
    width: 50%;
    -moz-animation: jquery 2s ease;
    -webkit-animation: jquery 2s ease;
+}
+
+.skillbar-bar {
+   -webkit-border-radius: 0px;
 }
 
 @-moz-keyframes photoshop {
@@ -1053,7 +1057,7 @@ call-to-action .button {
 
 #contact a,
 #contact a:visited {
-   color: #11ABB0;
+   color: #FFC107;
 }
 
 #contact a:hover,
@@ -1093,6 +1097,7 @@ call-to-action .button {
 #contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
+   color: #FFC107;
 }
 
 #contact .header-col {
@@ -1133,7 +1138,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
    color: #fff;
-   background-color: #11ABB0;
+   background-color: #757575;
 }
 
 #contact button.submit {
@@ -1151,7 +1156,7 @@ call-to-action .button {
 
 #contact button.submit:hover {
    color: #0D0D0D;
-   background: #fff;
+   background:#FFC107;
 }
 
 #contact span.required {
@@ -1162,6 +1167,12 @@ call-to-action .button {
 #contact .well {
    padding: 10px;
    border-radius: 4px;
+}
+
+#contact .well:hover {
+   background: #FFC107;
+   cursor: pointer;
+   color: #fff;
 }
 
 #contact .section-head {
@@ -1317,12 +1328,12 @@ footer .social-links li:first-child {
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 
-   color: #fff;
+   color: #000;
    font-size: 21px;
    line-height: 60px;
    border-radius: 100%;
 }
 
 #go-top a:hover {
-   background-color: #0F9095;
+   background-color: #FFC107;
 }

@@ -45,13 +45,15 @@ export default  class Resume extends Component {
 
            <Skillbar
               skills={resumeData.skills}
-              colors = {{
-                "bar": "#3498DA",
+              colors={{
+                "bar": "#FFC107",
                 "title": {
-                  "text": "#fff",
-                  "background": "#3498DA"
+                  "text": "#000",
+                  "background": "#FFA000"
                 }
               }}
+              height={25}
+              animationDuration={1000}
                 />
 
    				</div>
