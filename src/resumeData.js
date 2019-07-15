@@ -43,10 +43,34 @@ let resumeData = {
     ],
     "work":[
       {
+        "CompanyName":"Andela",
+        "specialization":"Software Developer",
+        "timeOfStart":"Nov, 2018",
+        "timeOfLeaving":"Present",
+        "responsibilities": [
+          "Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires."
+        ]
+      },
+      {
         "CompanyName":"Samasource Kenya Ltd.",
-        "specialization":"Agent Junior Developer",
-        "timeOfStart":"Jul, 2015",
-        "timeOfLeaving":"Nov, 2015",
+        "specialization":"Team Leader",
+        "timeOfStart":"Jun, 2016",
+        "timeOfLeaving":"Nov, 2018",
+        "responsibilities": [
+          "Supervising and coordinating the work efforts of the Samasource contact center team by leading, motivating and coaching.",
+          "Ensuring that the allocated work is done professionally as per the required standards and targets as defined and desired by Samasource.",
+          "Closely working with the Training and Quality Departments to achieve the desired results with the goal of achieving the right standards in performance appraisals."
+        ]
+      },
+      {
+        "CompanyName":"Samasource Kenya Ltd.",
+        "specialization":"Quality Analyst",
+        "timeOfStart":"Nov, 2015",
+        "timeOfLeaving":"May, 2016",
+        "responsibilities": [
+          "Analyzing the levels of quality of work in the different Samasource work streams, measuring compliance against set standards and recommending actions to be taken to improve quality based on assessment findings.",
+          "Assess agents transactions and advice on required measures to improve quality, compile and send reports to the Training and Quality Manager and to other relevant stakeholders and ensuring that each work stream is consistently delivering standard work."
+        ]
       },
       {
         "companyName":"Samasource Kenya Ltd.",
@@ -68,22 +92,15 @@ let resumeData = {
         ]
       },
       {
-        "CompanyName":"Samasource Kenya Ltd.",
-        "specialization":"Agent Junior Developer",
-        "timeOfStart":"Jul, 2015",
-        "timeOfLeaving":"Nov, 2015",
+        "CompanyName":"Aga Khan University Hospital",
+        "specialization":"I.T Trainer",
+        "timeOfStart":"Jan, 2015",
+        "timeOfLeaving":"April, 2015",
         "responsibilities": [
-          "Preliminary Feed Integrations",
-          "Creating new feeds and integrating them into the clients site.",
-          "Escalating complex integrations and feeds that require repairs.",
-          "Reviewing errors detected by the clients automated system, escalating issues when necessary.",
-          "Identifying improvements for detecting errors within job feeds.",
-          "Working with a fast-paced team to handle a high volume of requests in a timely manner.",
-          "Maintaining data work requirements by following data program techniques, procedures as well as meeting and maintaining the required quality threshold.",
-          "Verifying entered data by reviewing, correcting, deleting, or reentering data; purging files to eliminate duplication of data.",
-          "Contributing to team effort by accomplishing related results as needed.",
-          "Performing other work as required or assigned."
-
+          "Training of end users which include doctors and nurses on all modules of the healthcare management information system used by the hospital.",
+          "Generation of business process workflows for all the departments.",
+          "Training of end users on an online system to replace the use of physical X- ray films in the wards.",
+          "ICT support to the staff."
         ]
       }
     ],
