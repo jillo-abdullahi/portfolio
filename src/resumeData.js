@@ -48,7 +48,7 @@ let resumeData = {
         "timeOfStart":"Nov, 2018",
         "timeOfLeaving":"Present",
         "responsibilities": [
-          "Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires."
+          "Andela provides companies with access to the top 1% of global tech talent. It identifies high-potential developers on the African continent, shapes them into world-class technical leaders, and pairs them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires. I am one of the developers driving this goal."
         ]
       },
       {
