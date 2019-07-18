@@ -1,5 +1,28 @@
 import React, { Component } from 'react';
+import firebase from '../config/firebaseConfig';
 export default class ContactUs extends Component {
+
+  initialState = {
+    name: '',
+    email: '',
+    message: ''
+  }
+
+  state = { ...this.initialState }
+
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    const sendMail = firebase.functions().httpsCallable('sendMail');
+    sendMail().then((res) => console.log(res));
+
+  }
   render() {
     return (
       <section id="contact">
@@ -13,15 +36,15 @@ export default class ContactUs extends Component {
           <div className="row">
             <div className="eight columns">
               <div className="contact-form">
-                <form className="form-inline" action="/action_page.php">
+                <form className="form-inline" onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                  <input type="text" className="form-control" id="name" placeholder="Name"/>
+                  <input type="text" className="form-control" id="name" name="name" placeholder="Name" onChange={this.handleChange}/>
                 </div>
                 <div className="form-group">
-                  <input type="email" className="form-control" id="email" placeholder="Email"/>
+                  <input type="email" className="form-control" id="email" name="email" placeholder="Email" onChange={this.handleChange}/>
                 </div>
                 <div className="form-group">
-                  <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                  <textarea id="message" cols="30" rows="10" placeholder="Message" name="message" onChange={this.handleChange}></textarea>
                 </div>
                 <button type="submit" className="btn btn-default">Submit</button>
               </form>
