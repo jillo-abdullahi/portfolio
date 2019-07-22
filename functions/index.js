@@ -14,19 +14,24 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-exports.sendMail = functions.https.onRequest((req, res) => {
-    cors(req, res, () => {
+exports.sendMail = functions.https.onCall((data, context) => {
 
+
+        const info = data.details
         // getting destination email by query string
         const dest = functions.config().mail.dest
 
         const mailOptions = {
-            from: 'Jillo Abdullahi <jillo.abdullahi90@gmail.com>',
+            from: `${info.name} <${info.email}>`,
             to: dest,
-            subject: 'I\M A PICKLE!!',
-            html: `<p style="font-size: 16px;">Pickle Riiiiiiiiiiiiiiiick!!</p>
-                    <br />
-                    <img src="https://images.prod.meredith.com/product/fc8754735c8a9b4aebb786278e7265a5/1538025388228/l/rick-and-morty-pickle-rick-sticker" />
+            subject: 'Portfolio Alert',
+            html: `<p style="font-size: 16px;">${info.name}, ${info.email}</p>
+                    <p
+                    style="
+                        font-size: 1rem;
+                        background: #FFECB3;
+                        padding: 10px;
+                        border-radius: 10px 0 0 0;">${info.message}</p>
                 ` // email content in HTML
         };
 
@@ -34,10 +39,9 @@ exports.sendMail = functions.https.onRequest((req, res) => {
         return transporter.sendMail(mailOptions, (err, info) => {
             if(err){
                 console.log("failed", err);
-                return res.send(err.toString());
             }
-            return res.send('Sent');
         })
 
-    })
-})
+});
+
+

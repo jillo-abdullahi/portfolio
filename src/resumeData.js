@@ -43,6 +43,7 @@ let resumeData = {
     ],
     "work":[
       {
+        "id": 1,
         "companyName":"Andela",
         "specialization":"Software Developer",
         "timeOfStart":"Nov, 2018",
@@ -52,6 +53,7 @@ let resumeData = {
         ]
       },
       {
+        "id": 2,
         "companyName":"Samasource Kenya Ltd.",
         "specialization":"Team Leader",
         "timeOfStart":"Jun, 2016",
@@ -63,6 +65,7 @@ let resumeData = {
         ]
       },
       {
+        "id": 3,
         "companyName":"Samasource Kenya Ltd.",
         "specialization":"Quality Analyst",
         "timeOfStart":"Nov, 2015",
@@ -73,6 +76,7 @@ let resumeData = {
         ]
       },
       {
+        "id": 4,
         "companyName":"Samasource Kenya Ltd.",
         "specialization":"Agent Junior Developer",
         "timeOfStart":"Jul, 2015",
@@ -92,6 +96,7 @@ let resumeData = {
         ]
       },
       {
+        "id": 5,
         "companyName":"Aga Khan University Hospital",
         "specialization":"I.T Trainer",
         "timeOfStart":"Jan, 2015",

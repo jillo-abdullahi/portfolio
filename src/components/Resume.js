@@ -20,11 +20,11 @@ export default  class Resume extends Component {
                   <Timeline>
                     {resumeData.work && resumeData.work.map(item => {
                       return (
-                        <Event interval={item.timeOfStart + " - " +item.timeOfLeaving} title={item.companyName} subtitle={item.specialization}>
+                        <Event interval={item.timeOfStart + " - " +item.timeOfLeaving} title={item.companyName} subtitle={item.specialization} key={item.id} >
                           <ul>
                             {item.responsibilities && item.responsibilities.map(item => {
                               return(
-                                <li>{item}</li>
+                                <li key={Math.random() * item.id}>{item}</li>
                               )
                             })}
                           </ul>

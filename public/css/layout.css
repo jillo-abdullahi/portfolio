@@ -319,6 +319,7 @@ ul#nav li.current a {
 #resume h1 span {
    border-bottom: 3px solid #FFC107;
    padding-bottom: 6px;
+   cursor: pointer;
 }
 
 #resume h3 {
@@ -1172,7 +1173,7 @@ call-to-action .button {
 #contact .well:hover {
    background: #FFC107;
    cursor: pointer;
-   color: #fff;
+   color: #000;
 }
 
 #contact .section-head {
