@@ -9,7 +9,7 @@
     "react": "^16.6.0",
     "react-circular-progressbar": "^2.0.1",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1",
+    "react-scripts": "5.0.1",
     "react-skillbars": "^1.5.1",
     "react-timeline-scribble": "^1.0.14",
     "react-toasts": "^3.0.3",
